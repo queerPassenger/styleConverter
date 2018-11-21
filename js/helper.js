@@ -1,6 +1,6 @@
 
-const updateState=()=>{
-    this.setState({
+const updateState=(_inst)=>{
+    _inst.setState({
         _:''
     })
 }

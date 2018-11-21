@@ -4,7 +4,7 @@ const app=express();
 const server=http.createServer(app);
 const bodyParser=require('body-parser');
 /* const cookieParser=require('cookie-parser'); */
-const {surveySubmit}=require('./index.js');
+const {apiReceiver}=require('./index.js');
 
 server.listen(process.env.PORT || 3000 ,function(){
   console.log("up and running on port "+process.env.PORT);
@@ -20,9 +20,8 @@ app.get('/',(req,res)=>{
   res.sendFile(__dirname + '/index.html');
 });
 
-app.post('/surveysubmit',(req,res)=>{    
-  surveySubmit(req.body,(obj)=>{
+app.post('/convert',(req,res)=>{
+  apiReceiver(req.body,(obj)=>{
     res.send(obj);
-  })    
+  })
 });
-

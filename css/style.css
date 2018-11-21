@@ -1,10 +1,42 @@
 body{
     margin:0px;
 }
-.converter-wrapper{
+.converter-wrapper,.converter-input,.converter-output,.converter-btn{
   width:100%;
   float:left;
 }
-.converter-input,.converter-output{
-  height:100px;
+.converter-wrapper{
+    margin-top: 50px;
+}
+.converter-btn{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.converter-input>textarea,.converter-output>textarea{
+  border: 1px solid #d6d6d6;
+  border-radius: 7px;
+  width: 80%;
+  height: 200px;
+  margin-left: 10%;
+  margin-right: 10%;
+  outline: 0px;
+  font-family: monospace;
+  color: #464646;
+  padding-left: 1%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.converter-btn>button{
+  text-align: center;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0px;
+  color: white;
+  box-shadow: 1px 5px 4px grey;
+  background: linear-gradient(to right, rgb(195, 20, 50), rgb(36, 11, 54));
+  font-weight: bold;
+  border-radius: 5px;
 }

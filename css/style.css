@@ -1,0 +1,10 @@
+body{
+    margin:0px;
+}
+.converter-wrapper{
+  width:100%;
+  float:left;
+}
+.converter-input,.converter-output{
+  height:100px;
+}
